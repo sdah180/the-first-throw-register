@@ -48,7 +48,7 @@
     <button type="submit">Test Registration</button>
   </form>
     <div id="result" style="display:none; padding:20px; margin-top:20px; background:#102c25; color:#e3bd72; border-radius:12px; text-align:center;">
-  <h2>🎯 Congratulations!</h2>
+  <h2>🎯 Congratulations, <span id="playerName"></span>!</h2>
   <p>Your First Throw has been recorded in this demonstration.</p>
   <p>Sample registration number: <strong>000001</strong></p>
 </div>
@@ -56,6 +56,7 @@
   <script>
     document.querySelector('#registration form')
   .addEventListener('submit', function() {
+  document.getElementById('playerName').textContent = document.querySelector('#registration input[type="text"]').value;
     document.getElementById('result').style.display = 'block';
   });
 document.querySelectorAll('a, button').forEach(function(item) {
