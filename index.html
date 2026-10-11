@@ -14,6 +14,16 @@
 <main><div class="hero"><div class="eyebrow">A WORLDWIDE FIRST</div><div class="symbol">✦</div><h1>THE FIRST<br><span>THROW</span><br>REGISTER</h1><div class="rule"></div><h2>Every legend starts with a first throw.</h2><p class="intro">Three darts. One moment. Your place in the register.<br>A worldwide celebration of everyone's first three darts.</p><button class="pill">YOUR STORY STARTS HERE</button></div></main>
 <section><h3>One throw. A lifetime first.</h3><p>Whether your first three darts score 3 or 180, the moment deserves to be remembered. We're creating a place for first-time players around the world to mark their beginning.</p></section>
 <footer><strong>THE FIRST THROW REGISTER</strong><p>Preview website only — registration is not yet open.</p></footer>
+  <section id="registration" style="padding:30px 20px;text-align:center">
+  <h2>Register Your First Throw</h2>
+  <p>Test form only — no details will be saved.</p>
+  <form onsubmit="event.preventDefault(); alert('Registration form test successful! 🎯');">
+    <input type="text" placeholder="First name or nickname" required>
+    <input type="text" placeholder="Country" required>
+    <input type="number" min="0" max="180" placeholder="Three-dart score" required>
+    <button type="submit">Test Registration</button>
+  </form>
+</section>
   <script>
 document.querySelectorAll('a, button').forEach(function(item) {
   if (item.textContent.trim().toUpperCase() === 'YOUR STORY STARTS HERE') {
