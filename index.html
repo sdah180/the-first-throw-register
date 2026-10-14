@@ -62,6 +62,7 @@
   .addEventListener('submit', function() {
   document.getElementById('playerName').textContent = document.querySelector('#registration input[type="text"]').value;
    document.getElementById('certificateCountry').textContent = document.querySelectorAll('#registration input')[1].value;
+    document.getElementById('certificateScore').textContent = document.querySelector('#registration input[type="number"]').value;
     document.getElementById('result').style.display = 'block';
   });
 document.querySelectorAll('a, button').forEach(function(item) {
